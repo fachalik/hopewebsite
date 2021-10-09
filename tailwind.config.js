@@ -1,3 +1,4 @@
+const plugin = require("tailwindcss/plugin")
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -23,5 +24,14 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      const utilities = {
+        ".shadow-card": {
+          "box-shadow": "0px 15px 30px rgba(0,0,0,0.1)"
+        }
+      }
+      addUtilities(utilities)
+    })
+  ],
 }
