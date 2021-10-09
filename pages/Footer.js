@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { Icon } from "@iconify/react"
+import onContentIndexClick from "../utils/scroll.js"
 
 export default function Footer() {
   return (
@@ -17,23 +18,32 @@ export default function Footer() {
             <div className="">
               <img src="/illustrations/logo.png" className="w-40" />
             </div>
-            <a className="hidden md:block cursor-pointer text-white hover:text-white uppercase">
+            <a
+              onClick={() => onContentIndexClick("apaItuHope")}
+              className="hidden md:block cursor-pointer text-white hover:text-white uppercase"
+            >
               Apa itu HOPE?
             </a>
-            <a className="hidden md:block cursor-pointer text-white hover:text-white uppercase">
+            <a
+              onClick={() => onContentIndexClick("tentangKami")}
+              className="hidden md:block cursor-pointer text-white hover:text-white uppercase"
+            >
               Tentang Kami
             </a>
-            <a className="hidden md:block cursor-pointer text-white hover:text-white uppercase">
+            <a
+              onClick={() => onContentIndexClick("hubungiKami")}
+              className="hidden md:block cursor-pointer text-white hover:text-white uppercase"
+            >
               Hubungi Kami
             </a>
             <div className="flex flex-row space-x-8 items-center justify-between">
-              <a href="#">
+              <a href="https://www.instagram.com/hellohope.life/">
                 <Icon icon="akar-icons:instagram-fill" className="text-3xl" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/hello-hope/about/">
                 <Icon icon="akar-icons:linkedin-fill" className="text-3xl" />
               </a>
-              <a href="#">
+              <a className="cursor-not-allowed">
                 <Icon icon="akar-icons:facebook-fill" className="text-3xl" />
               </a>
             </div>

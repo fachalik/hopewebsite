@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 export default function Motivasion() {
   return (
-    <section className="pt-28 bg-gradient-to-r from-yellow-100 to-yellow-500">
+    <section id="tentangKami" className="pt-28 bg-gradient-to-r from-yellow-100 to-yellow-500">
       <div className="container flex-row-reverse mx-auto ">
         <p className="text-3xl text-center text-serif font-extrabold mb-10 w-6/12 mx-auto">
           HOPE hadir untuk menjaga kesehatan mental dan fisik melalui kecerdasan

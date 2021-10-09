@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 export default function TentangKami() {
   return (
-    <section className="py-28 bg-gradient-to-r from-yellow-100 to-yellow-500">
+    <section id="apaItuHope" className="py-28 bg-gradient-to-r from-yellow-100 to-yellow-500">
       <div className="container mx-auto py-5 ">
         <p className="text-3xl text-center text-serif  font-extrabold mb-10">
           Apa itu HOPE?
